@@ -1,6 +1,12 @@
 {
   "name": "qucore-dynamic-MODULE-fullstack-root",
+  "description": "...",
   "version": "1.0.0",
+  "author": "Artem_Zhyto <https://github.com/ArtemZhyto>",
+  "contributors": [
+    "Artem_Zhyto <https://github.com/ArtemZhyto>"
+  ],
+  "license": "GPL-3.0",
   "private": true,
   "type": "module",
   "workspaces": [
