@@ -6,11 +6,11 @@ This repository contains the official development presets and architectural stan
 
 ## Available Presets
 
-| Preset                | Path                | Purpose                                           | License |
-| :-------------------- | :------------------ | :------------------------------------------------ | :------ |
-| **Backend Core**      | [`/back`](./back)   | Isolated Node.js services and API modules.        | GPL-3.0 |
-| **Frontend Core**     | [`/front`](./front) | Next.js interfaces for the ecosystem.             | GPL-3.0 |
-| **Fullstack Dynamic** | [`/full`](./full)   | Complex modules (Client + Server + Shared Types). | GPL-3.0 |
+| Preset                | Path    | Purpose                                           | License |
+| :-------------------- | :-------| :------------------------------------------------ | :------ |
+| **Backend Core**      | /back   | Isolated Node.js services and API modules.        | GPL-3.0 |
+| **Frontend Core**     | /front  | Next.js interfaces for the ecosystem.             | GPL-3.0 |
+| **Fullstack Dynamic** | /full   | Complex modules (Client + Server + Shared Types). | GPL-3.0 |
 
 ## Technical Stack
 
@@ -38,7 +38,7 @@ npx degit ArtemZhyto/qucore-presets/full qucore-fullstack-name
 
 We are building an open but strictly structured ecosystem. If you plan to propose a module or a fix to the core:
 
-1. Read the [CONTRIBUTING.md](./CONTRIBUTING.md) — it defines the "Elite" style guide.
+1. Read the [CONTRIBUTING.md](./CONTRIBUTING.md) - it defines the "Elite" style guide.
 2. Ensure your code passes the check: `npm run lint`.
 3. Open a Pull Request to the appropriate branch.
 
