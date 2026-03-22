@@ -1,5 +1,5 @@
 # **/_EXAMPLES
-**/generated/prisma
+**/generated
 **/node_modules
 **/dist
 # **/logs

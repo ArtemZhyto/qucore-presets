@@ -4,6 +4,8 @@
     "rootDir": "src",
     "outDir": "dist",
     "baseUrl": ".",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
     "paths": {
       "@controllers/*": ["src/controllers/*"],
       "@mails/*": ["src/mails/*"],
@@ -14,7 +16,7 @@
       "@sockets/*": ["src/sockets/*"],
       "@libs/*": ["../../libs/*"]
     },
-    "types": ["node", "prisma/client"]
+    "types": ["node"]
   },
   "include": ["src"],
   "exclude": ["node_modules", "dist", "tests"]

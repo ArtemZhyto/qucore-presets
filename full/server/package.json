@@ -6,20 +6,8 @@
     "Artem_Zhyto <https://github.com/ArtemZhyto>"
   ],
   "private": true,
-  "workspaces": [
-    "server/services/*"
-  ],
-  "scripts": {
-    "dev": "npm run dev --workspaces --if-present",
-    "build": "npm run build --workspaces --if-present",
-    "start": "npm run start --workspaces --if-present",
-    "test": "npm run test --workspaces --if-present",
-    "go": "npm run build && npm run start"
-  },
-  "dependencies": {
-    "axios": "^1.13.6"
-  },
   "devDependencies": {
+    "axios": "^1.13.6",
     "typescript": "^5.3.0",
     "@types/node": "^24.7.0"
   }
