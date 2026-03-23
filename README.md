@@ -10,7 +10,6 @@ This repository contains the official development presets and architectural stan
 | :-------------------- | :-------| :------------------------------------------------ | :------ |
 | **Backend Core**      | /back   | Isolated Node.js services and API modules.        | GPL-3.0 |
 | **Frontend Core**     | /front  | Next.js interfaces for the ecosystem.             | GPL-3.0 |
-| **Fullstack Dynamic** | /full   | Complex modules (Client + Server + Shared Types). | GPL-3.0 |
 
 ## Technical Stack
 
@@ -29,9 +28,6 @@ npx degit ArtemZhyto/qucore-presets/back qucore-module-name
 
 # For a Frontend module
 npx degit ArtemZhyto/qucore-presets/front qucore-app-name
-
-# For a Fullstack module
-npx degit ArtemZhyto/qucore-presets/full qucore-fullstack-name
 ```
 
 ## Contributing
