@@ -6,4 +6,4 @@ services:
     env_file:
       - .env
     ports:
-      - '${PORT}:3000'
+      - '<NEXT_PORT>:<NEXT_PORT>'
