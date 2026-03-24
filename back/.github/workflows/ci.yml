@@ -48,10 +48,10 @@ jobs:
       - name: Install root deps
         run: npm install
 
-      - name: Install service deps
-        run: |
-          cd services/${{ matrix.service }}
-          npm install
+      # - name: Install service deps
+      #   run: |
+      #     cd services/${{ matrix.service }}
+      #     npm install
 
       # - name: Prisma generate (if exists)
       #   run: |
@@ -61,11 +61,9 @@ jobs:
       #     fi
 
       # - name: Build service
-      #   run: |
-      #     cd services/${{ matrix.service }}
-      #     npm run build
+      #   working-directory: services/${{ matrix.service }}
+      #   run: npm run build
 
       # - name: Test service
-      #   run: |
-      #     cd services/${{ matrix.service }}
-      #     npm test -- --passWithNoTests
+      #   working-directory: services/${{ matrix.service }}
+      #   run: npm test -- --passWithNoTests

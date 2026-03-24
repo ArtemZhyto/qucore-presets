@@ -1,8 +1,14 @@
 services:
   <SERVICE_NAME>:
     build:
-      context: .
-      dockerfile: services/<SERVICE_NAME>/dockerfile
+      context: ../services/<SERVICE_NAME>
+      dockerfile: dockerfile
+    volumes:
+      - ../services/<SERVICE_NAME>/src:/app/src
+      - ../services/<SERVICE_NAME>/package.json:/app/package.json
+      - ../services/<SERVICE_NAME>/package-lock.json:/app/package-lock.json
+      - ../libs:/app/libs
+    command: npm run dev
     ports:
       - '${SERVICE_PORT}:${SERVICE_PORT}'
     env_file:
@@ -14,6 +20,8 @@ services:
   postgres:
     image: postgres:17-alpine
     restart: always
+    env_file:
+      - .env
     environment:
       POSTGRES_USER: ${POSTGRES_USER}
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
@@ -26,6 +34,8 @@ services:
   redis:
     image: redis:8-alpine
     restart: always
+    env_file:
+      - .env
     ports:
       - '${REDIS_PORT}:6379'
     volumes:
