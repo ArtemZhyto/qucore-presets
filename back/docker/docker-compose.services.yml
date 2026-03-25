@@ -1,0 +1,21 @@
+services:
+  <SERVICE_NAME>:
+    build:
+      context: ../services/<SERVICE_NAME>
+      dockerfile: dockerfile
+    volumes:
+      - ../services/<SERVICE_NAME>/src:/app/src
+      - ../services/<SERVICE_NAME>/package.json:/app/package.json
+      - ../services/<SERVICE_NAME>/package-lock.json:/app/package-lock.json
+      - ../libs:/app/libs
+    command: npm run dev
+    ports:
+      - '${SERVICE_PORT}:${SERVICE_PORT}'
+    env_file:
+      - .env
+    networks: [app-network]
+
+networks:
+  app-network:
+    external: true
+    name: qucore_<MODULE>_network
