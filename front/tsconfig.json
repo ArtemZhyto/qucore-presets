@@ -19,7 +19,7 @@
       }
     ],
     "paths": {
-      "@app-components/*": ["./src/./src/app/components/*"],
+      "@app-components/*": ["./src/app/components/*"],
       "@components-ui/*": ["./src/components/ui/*"],
       "@components-widgets/*": ["./src/components/widgets/*"],
       "@components/*": ["./src/components/*"],
