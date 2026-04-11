@@ -1,0 +1,13 @@
+services:
+  frontend:
+    build: .
+    env_file:
+      - .env.prod
+    container_name: client
+    ports:
+      - '3000:3000'
+    networks: [qucore_<SERVICE_NAME>_network]
+
+networks:
+  qucore_<SERVICE_NAME>_network:
+    external: true

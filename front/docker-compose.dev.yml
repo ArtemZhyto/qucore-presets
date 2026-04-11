@@ -1,0 +1,18 @@
+services:
+  frontend:
+    build: .
+    env_file:
+      - .env.prod
+    container_name: client
+    volumes:
+      - .:/app
+      - /app/node_modules
+      - /app/.next
+    command: npm run dev
+    ports:
+      - '3000:3000'
+    networks: [qucore_<SERVICE_NAME>_network]
+
+networks:
+  qucore_<SERVICE_NAME>_network:
+    external: true
