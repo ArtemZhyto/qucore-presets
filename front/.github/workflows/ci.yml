@@ -31,10 +31,10 @@ jobs:
       # - name: Build project
       #   run: npm run build
       #   env:
-      #     AUTH_URL: ${{ secrets.AUTH_URL }}
-      #     NEXT_PUBLIC_SITE: ${{ secrets.NEXT_PUBLIC_SITE }}
-      #     PORT: ${{ secrets.PORT }}
-      #     MODE: 'prod'
+      #       MODE: 'prod'
+      #       NEXT_PUBLIC_SITE: '<MODULE_NAME>.qucore.io'
+      #       NEXT_AUTH_URL: ${{ secrets.NEXT_AUTH_URL }}
+      #       AUTH_URL: ${{ secrets.AUTH_URL }}
 
       - name: Run tests
         run: npm test -- --passWithNoTests
